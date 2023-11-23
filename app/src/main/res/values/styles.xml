@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextPageName">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CardMain" parent="">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+        <item name="contentPaddingBottom">16dp</item>
+        <item name="contentPaddingTop">16dp</item>
+
+    </style>
+
+    <style name="TextPrice">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextField">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextFieldAdd">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextPositiveButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CardPositiveButton">
+        <item name="cardBackgroundColor">@color/blue</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="contentPaddingTop">15dp</item>
+        <item name="contentPaddingBottom">15dp</item>
+    </style>
+
+    <style name="TextHotelProperties">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CardHotelProperties">
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardBackgroundColor">@color/very_light_grey</item>
+    </style>
+
+    <style name="CardEditField">
+        <item name="cardBackgroundColor">@color/very_light_grey</item>
+        <item name="cardCornerRadius">10dp</item>
+    </style>
+
+    <style name="TextRating">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CardRating">
+        <item name="cardElevation">0dp</item>
+        <item name="contentPaddingLeft">10dp</item>
+        <item name="contentPaddingRight">10dp</item>
+        <item name="contentPaddingTop">5dp</item>
+        <item name="contentPaddingBottom">5dp</item>
+
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardBackgroundColor">@color/twenty_prc_yellow</item>
+    </style>
+</resources>

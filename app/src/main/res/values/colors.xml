@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#FF828796</color>
+    <color name="yellow">#FFFFA800</color>
+    <color name="twenty_prc_yellow">#33FFC700</color>
+    <color name="very_light_grey">#FFFBFBFC</color>
+    <color name="light_grey">#FFA9ABB7</color>
+    <color name="blue">#FF0D72FF</color>
+    <color name="ten_prc_blue">#1A0D72FF</color>
+
 </resources>
