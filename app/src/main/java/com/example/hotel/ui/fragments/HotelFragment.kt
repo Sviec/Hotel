@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.viewpager2.widget.ViewPager2
+import androidx.navigation.fragment.findNavController
 import com.example.hotel.databinding.FragmentHotelBinding
-import com.example.hotel.ui.slider.ImageAdapter
+import com.google.android.material.carousel.CarouselSnapHelper
 
 
 class HotelFragment : Fragment() {
@@ -15,8 +15,6 @@ class HotelFragment : Fragment() {
     private val binding get() = _binding!!
 
 
-    private lateinit var adapter: ImageAdapter
-    private lateinit var viewPager: ViewPager2
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,9 +25,13 @@ class HotelFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        adapter = ImageAdapter(requireActivity())
-        viewPager = binding.slider
-        viewPager.adapter = adapter
+        val snapHelper = CarouselSnapHelper()
+        snapHelper.attachToRecyclerView(binding.carouselRecyclerView)
+
+        binding.positiveButton.setOnClickListener {
+            val act = HotelFragmentDirections.actionHotelFragmentToRoomFragment()
+            findNavController().navigate(act)
+        }
     }
 
     override fun onDestroy() {

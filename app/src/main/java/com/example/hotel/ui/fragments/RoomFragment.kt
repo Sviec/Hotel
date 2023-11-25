@@ -5,11 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.viewpager2.widget.ViewPager2
-import com.example.hotel.R
-import com.example.hotel.databinding.FragmentHotelBinding
+import androidx.navigation.fragment.findNavController
 import com.example.hotel.databinding.FragmentRoomBinding
-import com.example.hotel.ui.slider.ImageAdapter
 
 
 class RoomFragment : Fragment() {
@@ -27,6 +24,10 @@ class RoomFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.back.setOnClickListener {
+            val act = RoomFragmentDirections.actionRoomFragmentToReservationFragment()
+            findNavController().navigate(act)
+        }
     }
 
     override fun onDestroy() {
